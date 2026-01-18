@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickzap | Acelerador de Vendas no Whatsapp</title>
+    <meta name="description" content="Plataforma de atendimento ao cliente, automação de mensagens e mensagens em massa através do Whatsapp.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .glass-header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .gradient-green { background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); }
+        .bg-pattern { background-image: radial-gradient(#22c55e 0.5px, transparent 0.5px); background-size: 20px 20px; }
+        .video-shadow { filter: drop-shadow(0 20px 50px rgba(34, 197, 94, 0.3)); }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900 overflow-x-hidden">
+
+    <header class="glass-header shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-12">
+                <span class="text-2xl font-black text-green-600 tracking-tighter">CLICK<span class="text-gray-800">ZAP</span></span>
+                <div class="hidden lg:flex space-x-6 font-semibold text-gray-500 text-sm uppercase tracking-wider">
+                    <a href="#inicio" class="hover:text-green-600 transition">Início</a>
+                    <div class="relative group cursor-pointer">
+                        <span class="hover:text-green-600 transition">Soluções <i class="fas fa-chevron-down text-[10px]"></i></span>
+                        <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-xl p-4 w-48 mt-2 border border-gray-100">
+                            <a href="#livechat" class="block p-2 hover:bg-green-50 rounded">Livechat</a>
+                            <a href="#automacao" class="block p-2 hover:bg-green-50 rounded">Fluxo</a>
+                            <a href="#transmissao" class="block p-2 hover:bg-green-50 rounded">Transmissão</a>
+                        </div>
+                    </div>
+                    <a href="#planos" class="hover:text-green-600 transition">Planos</a>
+                    <a href="#faq" class="hover:text-green-600 transition">FAQ</a>
+                    <a href="#quem-somos" class="hover:text-green-600 transition">Quem somos</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-700 font-bold text-sm hidden sm:block">Entrar</a>
+                <a href="#" class="gradient-green text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-green-200 hover:scale-105 transition-all text-sm">Cadastre-se</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="relative pt-20 pb-32 bg-white overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-green-50/50 skew-x-12 transform translate-x-1/2 -z-10"></div>
+            <div class="absolute top-20 left-10 w-64 h-64 bg-green-100/30 rounded-full blur-3xl -z-10"></div>
+
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-green-50 border border-green-100 px-4 py-2 rounded-full text-green-700 text-xs font-bold uppercase tracking-widest mb-8 animate-bounce">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                            </span>
+                            Líder em Automação de WhatsApp
+                        </div>
+
+                        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-[1.05] text-slate-900 tracking-tight">
+                            Escale as suas <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-400">vendas</span> no Whatsapp
+                        </h1>
+                        
+                        <p class="text-xl text-gray-500 mb-10 max-w-xl leading-relaxed mx-auto lg:mx-0">
+                            A plataforma completa para transformar seu WhatsApp em uma máquina de vendas com automação inteligente e gestão de leads em tempo real.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <button class="bg-green-600 text-white px-10 py-5 rounded-2xl text-lg font-bold hover:bg-green-700 shadow-[0_20px_40px_-15px_rgba(34,197,94,0.4)] transition-all hover:-translate-y-1 active:scale-95">
+                                COMEÇAR AGORA
+                            </button>
+                            <button class="flex items-center justify-center gap-3 bg-white border-2 border-slate-100 text-slate-700 px-8 py-5 rounded-2xl text-lg font-bold hover:bg-slate-50 transition-all hover:border-green-200">
+                                <i class="fas fa-play-circle text-green-600 text-2xl"></i> VER DEMONSTRAÇÃO
+                            </button>
+                        </div>
+
+                        <div class="mt-10 flex items-center justify-center lg:justify-start gap-4 text-gray-400 text-sm font-medium">
+                            <div class="flex -space-x-2">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=a" alt="">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=b" alt="">
+                                <img class="w-8 h-8 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?u=c" alt="">
+                            </div>
+                            <span>+2.000 empresas confiam no Clickzap</span>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2 relative">
+                        <div class="relative z-10 bg-slate-900 rounded-[2.5rem] p-2 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.2)] border border-slate-800">
+                            <img src="dashboard.png" alt="Interface" class="rounded-[2rem] w-full object-cover">
+                        </div>
+
+                        <div class="absolute -bottom-6 -left-6 md:-left-12 bg-white p-5 rounded-2xl shadow-2xl flex items-center gap-4 z-20 border border-gray-100 animate-float" style="animation: float 6s ease-in-out infinite;">
+                            <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-green-200">
+                                <i class="fas fa-user-plus text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-black text-slate-900">+584 Leads</p>
+                                <p class="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Capturados Hoje</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-2xl flex items-center gap-4 z-20 border border-gray-100" style="animation: float 8s ease-in-out infinite reverse;">
+                            <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                                <i class="fas fa-comments text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-black text-slate-900">12 Atendentes</p>
+                                <p class="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Online Agora</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-green-500/10 rounded-full blur-[100px]"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+        </style>
+
+    <section id="livechat" class="py-24 bg-gray-50 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <div class="lg:w-1/2 order-2 lg:order-1 relative">
+                    <div class="relative video-shadow group cursor-pointer">
+                        <div class="bg-white rounded-[2.5rem] p-3 shadow-2xl border border-gray-100 overflow-hidden relative">
+                            <img src="https://via.placeholder.com/600x450/f8fafc/64748b?text=Interface+Multiatendimento+Clickzap" alt="Interface Livechat" class="rounded-[2rem] w-full">
+                            
+                            <div class="absolute inset-0 flex items-center justify-center bg-slate-900/10 group-hover:bg-slate-900/20 transition-all">
+                                <div class="w-20 h-20 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-500">
+                                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white">
+                                        <i class="fas fa-play ml-1"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-gray-50 flex items-center gap-3 z-20 animate-float">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-green-100 border-2 border-white flex items-center justify-center text-[10px] font-bold text-green-700">JS</div>
+                                <div class="w-8 h-8 rounded-full bg-blue-100 border-2 border-white flex items-center justify-center text-[10px] font-bold text-blue-700">MA</div>
+                            </div>
+                            <p class="text-xs font-bold text-slate-800">Equipe Online</p>
+                        </div>
+
+                        <div class="absolute -bottom-6 -right-6 bg-slate-900 text-white p-4 rounded-2xl shadow-2xl z-20 border border-slate-800">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-bolt text-yellow-400"></i>
+                                <span class="text-xs font-bold uppercase tracking-tighter">Resposta em < 1 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-green-100 text-green-700 text-xs font-black uppercase tracking-widest">
+                        Centralização Total
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 text-slate-900 leading-[1.1]">
+                        Um só número para <span class="text-green-600">toda a sua equipe</span>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Esqueça a bagunça de vários celulares. Centralize vendas, suporte e financeiro em uma única tela organizada e profissional.
+                    </p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 shrink-0 bg-white shadow-md rounded-xl flex items-center justify-center text-green-600">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Múltiplos Atendentes</h4>
+                                <p class="text-sm text-gray-500">Conecte quantos usuários precisar no mesmo número oficial.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 shrink-0 bg-white shadow-md rounded-xl flex items-center justify-center text-green-600">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Transferência de Chats</h4>
+                                <p class="text-sm text-gray-500">Passe conversas entre setores com apenas um clique.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 shrink-0 bg-white shadow-md rounded-xl flex items-center justify-center text-green-600">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Histórico Completo</h4>
+                                <p class="text-sm text-gray-500">Nunca perca uma informação. Tudo fica gravado na nuvem.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white font-bold rounded-xl hover:bg-green-700 hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        Conhecer o Livechat
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="automacao" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 bg-green-50 rounded-full blur-3xl -z-10"></div>
+
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-green-50 text-green-700 text-xs font-black uppercase tracking-widest border border-green-100">
+                        <i class="fas fa-clock"></i> Disponibilidade 24/7
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 text-slate-900 leading-[1.1]">
+                        Não perca vendas por <span class="text-green-600">demora no atendimento</span>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Crie fluxos de conversas inteligentes que qualificam leads, respondem dúvidas frequentes e direcionam para o setor correto automaticamente, a qualquer hora do dia ou da noite.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-3">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 mb-1">Chatbot Inteligente</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Respostas instantâneas baseadas em palavras-chave ou menus.</p>
+                        </div>
+                        
+                        <div class="p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-3">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 mb-1">Fluxos de Arraste</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Monte seu fluxo visualmente sem precisar digitar uma linha de código.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-10">
+                        <div class="flex items-center gap-3 text-slate-700 font-medium">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            Qualificação automática de leads
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700 font-medium">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            Menu de opções para autoatendimento
+                        </div>
+                    </div>
+
+                    <a href="#" class="inline-flex items-center font-bold text-green-600 group">
+                        <span class="border-b-2 border-green-600/20 group-hover:border-green-600 transition-all">Ver todas as automações</span>
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="lg:w-1/2 relative">
+                    <div class="bg-slate-900 rounded-[3rem] p-6 text-white shadow-[0_50px_100px_-20px_rgba(15,23,42,0.3)] relative overflow-hidden border border-slate-800">
+                        
+                        <div class="flex items-center gap-3 mb-8 pb-4 border-b border-slate-800">
+                            <div class="relative">
+                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-robot text-white"></i>
+                                </div>
+                                <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-400 border-2 border-slate-900 rounded-full"></div>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold">Assistente Clickzap</p>
+                                <p class="text-[10px] text-green-400 font-medium tracking-wide">Online agora</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6 relative z-10">
+                            <div class="flex flex-col items-start space-y-2">
+                                <div class="bg-slate-800 p-4 rounded-2xl rounded-tl-none max-w-[80%] text-sm leading-relaxed border border-slate-700">
+                                    Olá! Bem-vindo à nossa loja. 🚀<br>Como posso agilizar seu atendimento hoje?
+                                </div>
+                                <span class="text-[10px] text-slate-500 ml-1">09:41 AM</span>
+                            </div>
+
+                            <div class="flex flex-col items-end space-y-2">
+                                <div class="bg-green-600 p-4 rounded-2xl rounded-tr-none max-w-[80%] text-sm leading-relaxed shadow-lg shadow-green-900/20">
+                                    Gostaria de falar com o setor comercial sobre os planos.
+                                </div>
+                                <span class="text-[10px] text-slate-500 mr-1">09:41 AM</span>
+                            </div>
+
+                            <div class="flex flex-col items-start space-y-2">
+                                <div class="bg-slate-800 p-4 rounded-2xl rounded-tl-none max-w-[80%] text-sm leading-relaxed border border-slate-700">
+                                    Com certeza! Redirecionando você para um de nossos especialistas em vendas... 🔄
+                                </div>
+                                <div class="flex gap-1 ml-2">
+                                    <span class="w-1.5 h-1.5 bg-slate-600 rounded-full animate-bounce"></span>
+                                    <span class="w-1.5 h-1.5 bg-slate-600 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+                                    <span class="w-1.5 h-1.5 bg-slate-600 rounded-full animate-bounce [animation-delay:0.4s]"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <i class="fab fa-whatsapp absolute -bottom-12 -right-12 text-[180px] text-white opacity-[0.03] -rotate-12"></i>
+                    </div>
+
+                    <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-full shadow-xl border border-gray-100 flex items-center gap-3 whitespace-nowrap z-20">
+                        <span class="flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                        </span>
+                        <p class="text-xs font-bold text-slate-800 tracking-tight">Redução de 80% no tempo de espera</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="transmissao" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] -z-10"></div>
+
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 relative">
+                <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-slate-800 border border-slate-700 text-green-400 text-xs font-black uppercase tracking-[0.2em]">
+                    Potencialize seu Alcance
+                </div>
+                <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">
+                    Realize <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">vendas em massa</span>
+                </h2>
+                <p class="text-slate-400 text-xl max-w-2xl mx-auto leading-relaxed">
+                    Envie campanhas para milhares de contatos com um clique. Sem listas manuais, sem perda de tempo e com segmentação cirúrgica.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="group bg-slate-800/50 backdrop-blur-sm p-10 rounded-[3rem] border border-slate-700 hover:border-green-500/50 transition-all duration-500 shadow-2xl relative overflow-hidden">
+                    <div class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center text-green-500 text-3xl mb-8 group-hover:scale-110 group-hover:bg-green-500 group-hover:text-white transition-all duration-500">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Base Inteligente</h3>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Seu CRM é construído sozinho. Cada novo contato que interage é salvo e categorizado automaticamente na sua base.
+                    </p>
+                    
+                    <div class="bg-slate-900/50 rounded-2xl p-4 border border-slate-700">
+                        <p class="text-[10px] uppercase font-bold text-slate-500 mb-3 tracking-widest">Contatos Capturados</p>
+                        <div class="flex items-center gap-3">
+                            <div class="flex -space-x-3">
+                                <img class="w-8 h-8 rounded-full border-2 border-slate-800" src="https://i.pravatar.cc/100?u=11">
+                                <img class="w-8 h-8 rounded-full border-2 border-slate-800" src="https://i.pravatar.cc/100?u=12">
+                                <img class="w-8 h-8 rounded-full border-2 border-slate-800" src="https://i.pravatar.cc/100?u=13">
+                            </div>
+                            <span class="text-lg font-black text-white">+12.480</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:scale-110 z-10 group bg-gradient-to-b from-slate-800 to-slate-900 p-10 rounded-[3rem] border-2 border-green-500/30 shadow-[0_30px_60px_-15px_rgba(34,197,94,0.2)] relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-6">
+                        <span class="flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                        </span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-4">Disparo em Lote</h3>
+                    <p class="text-slate-400 leading-relaxed mb-8 text-sm">
+                        Tecnologia anti-bloqueio com intervalos inteligentes para garantir que sua mensagem chegue ao destino.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider">
+                            <span class="text-green-400">Enviando Campanha...</span>
+                            <span class="text-white">87%</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-3 overflow-hidden">
+                            <div class="bg-gradient-to-r from-green-600 to-green-400 h-full w-[87%] rounded-full shadow-[0_0_15px_rgba(34,197,94,0.5)]"></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-700">
+                                <p class="text-[9px] text-slate-500 font-bold uppercase">Sucesso</p>
+                                <p class="text-lg font-black text-green-400">2.840</p>
+                            </div>
+                            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-700">
+                                <p class="text-[9px] text-slate-500 font-bold uppercase">Pendentes</p>
+                                <p class="text-lg font-black text-slate-300">412</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-800/50 backdrop-blur-sm p-10 rounded-[3rem] border border-slate-700 hover:border-blue-500/50 transition-all duration-500 shadow-2xl relative overflow-hidden">
+                    <div class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-500 text-3xl mb-8 group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-white transition-all duration-500">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Tags Dinâmicas</h3>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Filtre sua base por comportamento. Envie promoções apenas para quem clicou em "Preços" no seu site.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-500/10 text-blue-400 border border-blue-500/20 px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-tighter">🛒 Abandono de Carrinho</span>
+                        <span class="bg-green-500/10 text-green-400 border border-green-500/20 px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-tighter">🔥 Cliente VIP</span>
+                        <span class="bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-tighter">+8 Tags</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="planos" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-slate-100 text-slate-600 text-xs font-black uppercase tracking-widest">
+                    Preços Transparentes
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-slate-900">Planos que crescem com você</h2>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                    Escolha a melhor opção para o seu momento. Sem taxas de configuração, sem letras miúdas.
+                </p>
+                
+                <div class="flex items-center justify-center mt-8 gap-4">
+                    <span class="text-sm font-bold text-slate-900">Mensal</span>
+                    <div class="w-12 h-6 bg-green-500 rounded-full relative shadow-inner cursor-pointer">
+                        <div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow"></div>
+                    </div>
+                    <span class="text-sm font-bold text-gray-400">Anual <span class="text-green-600 text-[10px] bg-green-100 px-2 py-0.5 rounded-full ml-1">20% OFF</span></span>
+                </div>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-end">
+                
+                <div class="group border rounded-[2.5rem] p-10 hover:shadow-xl transition-all duration-300 border-slate-100 bg-white flex flex-col relative overflow-hidden">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-black text-slate-900">Starter</h3>
+                        <p class="text-gray-400 text-sm mt-1">Essencial para autônomos.</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <span class="text-4xl font-black text-slate-900 tracking-tighter">R$ 97</span>
+                        <span class="text-gray-400 font-medium">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 bg-green-50 p-1 rounded-full text-[10px]"></i>
+                            1 Instância de WhatsApp
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 bg-green-50 p-1 rounded-full text-[10px]"></i>
+                            Gestão de Contatos Básica
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 bg-green-50 p-1 rounded-full text-[10px]"></i>
+                            1.000 Envios Mensais
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 text-sm line-through">
+                            Chatbot Inteligente
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full py-4 rounded-2xl border-2 border-slate-100 text-slate-600 font-bold hover:border-green-600 hover:text-green-600 transition-all active:scale-95">
+                        Começar Agora
+                    </button>
+                </div>
+
+                <div class="relative z-10 bg-slate-900 rounded-[2.5rem] p-10 shadow-[0_40px_80px_-15px_rgba(0,0,0,0.3)] flex flex-col transform lg:scale-105 border border-slate-800">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-green-500 to-green-400 text-white px-6 py-1.5 rounded-full font-black text-[10px] tracking-[0.2em] shadow-lg shadow-green-500/20">
+                        O MAIS VENDIDO
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-black text-white">Professional</h3>
+                        <p class="text-slate-400 text-sm mt-1">Para empresas em crescimento.</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <span class="text-5xl font-black text-white tracking-tighter">R$ 197</span>
+                        <span class="text-slate-500 font-medium">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                            <i class="fas fa-check text-green-400 bg-green-400/10 p-1 rounded-full text-[10px]"></i>
+                            Até 3 Números Oficiais
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                            <i class="fas fa-check text-green-400 bg-green-400/10 p-1 rounded-full text-[10px]"></i>
+                            Chatbot Inteligente Ilimitado
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                            <i class="fas fa-check text-green-400 bg-green-400/10 p-1 rounded-full text-[10px]"></i>
+                            Campanhas em Massa Ilimitadas
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                            <i class="fas fa-check text-green-400 bg-green-400/10 p-1 rounded-full text-[10px]"></i>
+                            API & Webhooks
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full py-5 rounded-2xl bg-green-600 text-white font-black text-lg hover:bg-green-500 shadow-[0_15px_30px_-10px_rgba(34,197,94,0.5)] transition-all active:scale-95">
+                        QUERO ESCALAR AGORA
+                    </button>
+                    <p class="text-center text-[10px] text-slate-500 mt-4 font-bold uppercase tracking-widest">
+                        <i class="fas fa-shield-alt mr-1"></i> 7 dias de garantia incondicional
+                    </p>
+                </div>
+
+                <div class="border rounded-[2.5rem] p-10 hover:shadow-xl transition-all duration-300 border-slate-100 bg-white flex flex-col">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-black text-slate-900">Enterprise</h3>
+                        <p class="text-gray-400 text-sm mt-1">Escala total e suporte VIP.</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <span class="text-4xl font-black text-slate-900 tracking-tighter">R$ 497</span>
+                        <span class="text-gray-400 font-medium">/mês</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 bg-green-50 p-1 rounded-full text-[10px]"></i>
+                            Instâncias Ilimitadas
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 bg-green-50 p-1 rounded-full text-[10px]"></i>
+                            Gerente de Contas Dedicado
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-600 text-sm">
+                            <i class="fas fa-check text-green-500 bg-green-50 p-1 rounded-full text-[10px]"></i>
+                            SLA de Suporte 15min
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full py-4 rounded-2xl border-2 border-slate-900 text-slate-900 font-bold hover:bg-slate-900 hover:text-white transition-all active:scale-95">
+                        Falar com Consultor
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-20 flex flex-wrap justify-center items-center gap-8 opacity-40 grayscale">
+                <img src="https://via.placeholder.com/120x40?text=SSL+SECURE" alt="SSL">
+                <img src="https://via.placeholder.com/120x40?text=VISA" alt="Visa">
+                <img src="https://via.placeholder.com/120x40?text=MASTERCARD" alt="Mastercard">
+                <img src="https://via.placeholder.com/120x40?text=PIX" alt="Pix">
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="flex flex-col lg:flex-row gap-16">
+                
+                <div class="lg:w-1/3 text-center lg:text-left">
+                    <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-green-100 text-green-700 text-xs font-black uppercase tracking-widest">
+                        FAQ
+                    </div>
+                    <h2 class="text-4xl font-black text-slate-900 mb-6 leading-tight">Perguntas comuns</h2>
+                    <p class="text-gray-500 mb-8 leading-relaxed">
+                        Tudo o que você precisa saber sobre o Clickzap para escalar sua operação hoje mesmo.
+                    </p>
+                    
+                    <div class="p-6 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50">
+                        <p class="font-bold text-slate-900 mb-2">Ainda tem dúvidas?</p>
+                        <p class="text-sm text-gray-500 mb-6">Nossa equipe de especialistas está pronta para te atender.</p>
+                        <a href="#" class="flex items-center justify-center gap-2 w-full py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all">
+                            <i class="fab fa-whatsapp"></i> Falar no Suporte
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3 space-y-4">
+                    
+                    <details class="group bg-white rounded-[1.5rem] border border-gray-100 shadow-sm transition-all duration-300 open:shadow-xl open:border-green-200" open>
+                        <summary class="list-none flex justify-between items-center p-6 cursor-pointer outline-none">
+                            <span class="font-bold text-slate-900 text-lg pr-4">É seguro utilizar o Clickzap com o meu número?</span>
+                            <div class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-open:bg-green-500 group-open:text-white transition-all">
+                                <i class="fas fa-plus group-open:rotate-45 transition-transform"></i>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">
+                            Sim! Utilizamos protocolos de conexão seguros e criptografados. Seguimos as melhores práticas para garantir que sua conta permaneça estável. Recomendamos sempre seguir nossas orientações de aquecimento para garantir 100% de segurança.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-[1.5rem] border border-gray-100 shadow-sm transition-all duration-300 open:shadow-xl open:border-green-200">
+                        <summary class="list-none flex justify-between items-center p-6 cursor-pointer outline-none">
+                            <span class="font-bold text-slate-900 text-lg pr-4">Posso cancelar minha subscrição a qualquer momento?</span>
+                            <div class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-open:bg-green-500 group-open:text-white transition-all">
+                                <i class="fas fa-plus group-open:rotate-45 transition-transform"></i>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">
+                            Com certeza. Não acreditamos em fidelidade forçada. Você pode cancelar sua renovação com apenas um clique diretamente no seu painel de controle, sem burocracia, multas ou necessidade de falar com atendente.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-[1.5rem] border border-gray-100 shadow-sm transition-all duration-300 open:shadow-xl open:border-green-200">
+                        <summary class="list-none flex justify-between items-center p-6 cursor-pointer outline-none">
+                            <span class="font-bold text-slate-900 text-lg pr-4">Oferecem treinamento para a plataforma?</span>
+                            <div class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-open:bg-green-500 group-open:text-white transition-all">
+                                <i class="fas fa-plus group-open:rotate-45 transition-transform"></i>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">
+                            Sim, temos uma central de ajuda completa com vídeos "mão na massa" e suporte humano via ticket e WhatsApp para te ajudar a configurar seus primeiros fluxos de automação com sucesso.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-[1.5rem] border border-gray-100 shadow-sm transition-all duration-300 open:shadow-xl open:border-green-200">
+                        <summary class="list-none flex justify-between items-center p-6 cursor-pointer outline-none">
+                            <span class="font-bold text-slate-900 text-lg pr-4">Preciso deixar o meu celular ligado?</span>
+                            <div class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-open:bg-green-500 group-open:text-white transition-all">
+                                <i class="fas fa-plus group-open:rotate-45 transition-transform"></i>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-gray-50 pt-4">
+                            Não! Uma vez conectado, nosso sistema roda 100% na nuvem. Você pode desligar seu celular ou fechar o computador que as suas automações e o seu chatbot continuarão funcionando 24 horas por dia.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Remove a seta padrão do navegador para o <details> */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary {
+            list-style: none;
+        }
+    </style>
+
+    <section id="quem-somos" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10">
+                        <img src="equipe.jpg" alt="Equipe Clickzap" class="rounded-[3rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 object-cover w-full h-[500px]">
+                        
+                        <div class="absolute -bottom-10 -right-10 bg-slate-900 text-white p-8 rounded-[2rem] shadow-2xl hidden md:block border-8 border-white">
+                            <p class="text-4xl font-black text-green-500">5+</p>
+                            <p class="text-xs uppercase font-bold tracking-widest text-slate-400">Anos de inovação</p>
+                        </div>
+                    </div>
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-green-100 rounded-full -z-10"></div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-slate-100 text-slate-600 text-xs font-black uppercase tracking-widest">
+                        Nossa História
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-black mb-6 text-slate-900 leading-tight">
+                        Transformando a comunicação digital no <span class="text-green-600">Brasil</span>
+                    </h2>
+                    
+                    <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+                        <p>
+                            Nascemos com um propósito claro: <span class="text-slate-900 font-semibold">humanizar a automação.</span> Acreditamos que o WhatsApp é a ferramenta de vendas mais poderosa do mundo, mas para escalar, sua empresa precisa de processos inteligentes, não apenas de robôs.
+                        </p>
+                        <p>
+                            Hoje, o Clickzap é a espinha dorsal de milhares de operações comerciais, ajudando empreendedores a recuperarem o controle sobre seu tempo e seus leads.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-10 mt-10 p-8 bg-gray-50 rounded-[2rem] border border-gray-100">
+                        <div class="text-center lg:text-left">
+                            <p class="text-4xl font-black text-slate-900">+10k</p>
+                            <p class="text-xs font-bold text-green-600 uppercase tracking-wider">Clientes Ativos</p>
+                        </div>
+                        <div class="h-12 w-px bg-gray-200"></div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-4xl font-black text-slate-900">99%</p>
+                            <p class="text-xs font-bold text-green-600 uppercase tracking-wider">Satisfação</p>
+                        </div>
+                        <div class="h-12 w-px bg-gray-200"></div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-4xl font-black text-slate-900">24/7</p>
+                            <p class="text-xs font-bold text-green-600 uppercase tracking-wider">Monitoramento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="group bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-green-600 group-hover:text-white transition-colors duration-500">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-4 text-slate-900">Segurança Total</h4>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Proteção de dados e conformidade com as diretrizes do WhatsApp. Sua conta operando com estabilidade máxima.
+                    </p>
+                </div>
+
+                <div class="group bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-4 text-slate-900">Suporte Humano</h4>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Nada de falar com robôs. Temos um time de especialistas pronto para te atender via e-mail e WhatsApp em tempo real.
+                    </p>
+                </div>
+
+                <div class="group bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-8 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-500">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4 class="text-xl font-black mb-4 text-slate-900">Alta Performance</h4>
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Infraestrutura robusta em nuvem que garante que suas mensagens cheguem no milissegundo certo.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="relative bg-gradient-to-br from-green-600 to-green-700 rounded-[3rem] p-12 md:p-20 overflow-hidden shadow-[0_30px_60px_-15px_rgba(34,197,94,0.4)]">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+
+                <div class="relative z-10 text-center text-white">
+                    <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
+                        Pronto para transformar seu <br class="hidden md:block"> WhatsApp em uma máquina de vendas?
+                    </h2>
+                    <p class="text-xl md:text-2xl opacity-90 mb-12 max-w-2xl mx-auto font-medium">
+                        Junte-se a milhares de empresas que já escalaram o atendimento e multiplicaram seus lucros com o Clickzap.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <button class="w-full sm:w-auto bg-white text-green-600 px-12 py-6 rounded-2xl text-xl font-extrabold hover:shadow-2xl transition-all transform hover:-translate-y-1 active:scale-95">
+                            CRIAR MINHA CONTA GRÁTIS
+                        </button>
+                        <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-widest opacity-80">
+                            <i class="fas fa-check-circle"></i> Sem cartão de crédito
+                        </div>
+                    </div>
+                </div>
+
+                <i class="fab fa-whatsapp absolute top-10 left-10 text-white/10 text-6xl rotate-12"></i>
+                <i class="fab fa-whatsapp absolute bottom-10 right-20 text-white/5 text-9xl -rotate-12"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 pt-20 pb-10 text-white border-t border-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <span class="text-3xl font-black text-green-500 tracking-tighter uppercase">
+                        CLICK<span class="text-white">ZAP</span>
+                    </span>
+                    <p class="mt-6 text-slate-400 text-sm leading-relaxed">
+                        A plataforma líder em automação e gestão de vendas via WhatsApp. Tecnologia brasileira feita para escalar negócios de todos os tamanhos.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-6 uppercase text-xs tracking-[0.2em]">Plataforma</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#inicio" class="hover:text-green-500 transition-colors">Início</a></li>
+                        <li><a href="#livechat" class="hover:text-green-500 transition-colors">Multiatendimento</a></li>
+                        <li><a href="#automacao" class="hover:text-green-500 transition-colors">Chatbot</a></li>
+                        <li><a href="#planos" class="hover:text-green-500 transition-colors">Preços</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-6 uppercase text-xs tracking-[0.2em]">Suporte</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Central de Ajuda</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">API para Desenvolvedores</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-6 uppercase text-xs tracking-[0.2em]">Fique por dentro</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-green-600 hover:text-white transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-green-600 hover:text-white transition-all">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-green-600 hover:text-white transition-all">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-xs">
+                    © 2026 Clickzap. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
